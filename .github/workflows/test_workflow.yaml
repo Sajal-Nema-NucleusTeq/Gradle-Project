@@ -33,7 +33,7 @@ jobs:
         run: ./gradlew bootRun --args='--spring.profiles.active=prod'
         env:
           LIQUIBASE_OPERATIONS: ${{ github.event.inputs.environment }}
-          CLOUD_PLATFORM: AWS
+          CLOUD_PLATFORM: "AWS"
 
 
       - name: Build with Gradle
