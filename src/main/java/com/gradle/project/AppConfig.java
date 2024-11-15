@@ -21,6 +21,9 @@ public class AppConfig {
     
     @Value("${spring.datasource.password}")
     private String db_password;
+
+    @Value("${cloud.provider}")
+    private String cloud_platform;
      
     @Bean
     public AppConfig printProperties() {
@@ -29,6 +32,7 @@ public class AppConfig {
         System.out.println("Database URL: " + db_url);
         System.out.println("Database Username: " + db_username);
         System.out.println("Database Password: " + db_password);
+        System.out.println("Cloud Platform: " + cloud_platform);
 
         return new AppConfig();
     }
