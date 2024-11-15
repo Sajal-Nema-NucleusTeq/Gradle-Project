@@ -40,6 +40,7 @@ jobs:
         run: ./gradlew build
         env:
           LIQUIBASE_OPERATIONS: ${{ github.event.inputs.environment }}
+          CLOUD_PROVIDER: "AWS"
 
       - name: Upload JAR file
         uses: actions/upload-artifact@v3
