@@ -44,3 +44,16 @@ jobs:
           DATASOURCE_URL: ""
           DATASOURCE_USERNAME: "engine_service_user"
           DATASOURCE_PASSWORD: "MuPassword"
+
+      - name: Upload JAR file
+        uses: actions/upload-artifact@v3
+        with:
+          name: application-jar
+          path: build/libs/*.jar
+
+      
+      - name: Upload JAR file
+        uses: actions/upload-artifact@v3
+        with:
+          name: application-jar
+          path: build/libs/*.jar
