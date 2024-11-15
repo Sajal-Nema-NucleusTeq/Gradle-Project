@@ -31,5 +31,5 @@ tasks.named('test') {
 
 // Application plugin configuration
 application {
-    mainClass.set('com.gradle.project.AppConfig') // Correct usage of mainClass for Gradle 8+
+    mainClass.set('com.gradle.project.ProjectApplication.java') // Correct usage of mainClass for Gradle 8+
 }
