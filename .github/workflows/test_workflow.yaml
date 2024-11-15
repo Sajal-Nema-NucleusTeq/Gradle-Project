@@ -30,7 +30,7 @@ jobs:
         run: chmod +x ./gradlew
       
       - name: Run Gradle Project
-        run: ./gradlew bootRun --args='--spring.profiles.active=dev'
+        run: ./gradlew bootRun --args='--spring.profiles.active=prod'
         env:
           LIQUIBASE_OPERATIONS: ${{ github.event.inputs.environment }}
 
