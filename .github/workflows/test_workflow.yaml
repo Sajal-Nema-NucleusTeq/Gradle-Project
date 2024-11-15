@@ -29,13 +29,13 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       
-      - name: Run Gradle Project
-        run: ./gradlew run
-        env:
-          LIQUIBASE_OPERATIONS: ${{ github.event.inputs.environment }}
-          DATASOURCE_URL: ""
-          DATASOURCE_USERNAME: "engine_service_user"
-          DATASOURCE_PASSWORD: "MYPassword"
+      # - name: Run Gradle Project
+      #   run: ./gradlew run
+      #   env:
+      #     LIQUIBASE_OPERATIONS: ${{ github.event.inputs.environment }}
+      #     DATASOURCE_URL: ""
+      #     DATASOURCE_USERNAME: "engine_service_user"
+      #     DATASOURCE_PASSWORD: "MYPassword"
 
       - name: Build with Gradle
         run: ./gradlew build
